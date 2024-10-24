@@ -1,42 +1,46 @@
 body {
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflowing content */
+    display: flex; /* Flexbox centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 video {
-    /*width: 100%;  Fit video to container width */
-    height: 100%; /* Fit video to container height */
-    transform: scaleX(-1); /* Mirror the video feed */
-    position: absolute; /* Position video absolutely */
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    object-fit: cover; /* Ensure the video covers the entire container */
+    transform: scaleX(-1); /* Mirror the video */
+    position: absolute; /* Ensure it's covering the entire container */
     top: 0;
+    left: 0;
     z-index: 1; /* Below overlay */
 }
 
 #overlay {
     position: absolute;
     top: 0;
-    width: 100%; /* Fit overlay to container width */
-    height: 100%; /* Fit overlay to container height */
-    background-image: url('images/frame1.png'); /* Your frame design */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-image: url('images/frame1.png');
     background-size: cover;
     background-position: center;
-    z-index: 3; /* Above video */
+    z-index: 3; /* Above the video */
 }
 
-button {
-    padding: 10px 20px; /* Add some padding for the button */
-    font-size: 16px; /* Increase font size */
-    cursor: pointer; /* Change cursor to pointer */
+audio {
+    display: none; /* Hide the audio element */
 }
