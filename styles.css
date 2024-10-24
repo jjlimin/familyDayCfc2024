@@ -35,7 +35,7 @@ video {
 
 #overlay {
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%; /* Fit overlay to container width */
     height: 100%; /* Fit overlay to container height */
     background-image: url('images/frame.png'); /* Your frame design */
