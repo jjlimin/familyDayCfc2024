@@ -38,7 +38,7 @@ video {
     bottom: 0;
     width: 100%; /* Fit overlay to container width */
     height: 100%; /* Fit overlay to container height */
-    background-image: url('images/frame.png'); /* Your frame design */
+    background-image: url('images/frame1.png'); /* Your frame design */
     background-size: cover;
     background-position: center;
     z-index: 3; /* Above video */
