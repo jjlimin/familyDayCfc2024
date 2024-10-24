@@ -24,18 +24,9 @@ video {
     z-index: 1; /* Below overlay */
 }
 
-#canvas {
-    position: absolute;
-    top: 0;
-    width: 100%; /* Fit canvas to container width */
-    height: 100%; /* Fit canvas to container height */
-    display: none; /* Hide initially */
-    z-index: 2; /* Above video */
-}
-
 #overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 100%; /* Fit overlay to container width */
     height: 100%; /* Fit overlay to container height */
     background-image: url('images/frame1.png'); /* Your frame design */
