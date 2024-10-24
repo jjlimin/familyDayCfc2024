@@ -40,6 +40,7 @@ video {
     height: 100%; /* Fit overlay to container height */
     background-image: url('images/frame.png'); /* Your frame design */
     background-size: cover;
+    background-position: center;
     z-index: 3; /* Above video */
 }
 
